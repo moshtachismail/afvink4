@@ -13,9 +13,9 @@
             <input type="text" name="sequence">
         </p>
         <p>
-            Start je sequentie met ATG?
+            is het dna?
             {% if coding_dna.startswith("ATG") or coding_dna.startswith("atg") %}
-                <a href="/transcriptie" > JA!</a>
+                JA!
             {%  else %}
             NEE!
             {% endif %}
