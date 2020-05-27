@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>afvinkopdracht 4 </title>
+    <link rel= 'stylesheet' href= 'static/afvnk4.css'>
+</head>
+<h1>
+<h1> afvinkopdracht 4  </h1>
+    <form method="get">
+        <p>
+            Voer je sequentie in:
+            <input type="text" name="sequence">
+        </p>
+        <p>
+            Start je sequentie met ATG?
+            {% if coding_dna.startswith("ATG") or coding_dna.startswith("atg") %}
+                <a href="/transcriptie" > JA!</a>
+            {%  else %}
+            NEE!
+            {% endif %}
+        </p>
+    </form>
+    </p>
+    <button type="submit">submit</button>
+    </form>
+<BR><BR>
+het rna sequentie die erbij hoort : {{ messenger_rna }}
+<BR><BR>
+
+het eiwit sequentie die erbij hoort : {{ ei }}
+</body>
+</html>
