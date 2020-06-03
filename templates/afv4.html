@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>afvinkopdracht 4 </title>
+    <link rel= 'stylesheet' href= 'static/afvnk4.css'>
+</head>
+
+<h1> afvinkopdracht 4 - moshtach ismail  </h1>
+    <form method="get">
+        <p>
+            Voer je sequentie in:
+            <input type="text" name="seq">
+        </p>
+        <p>
+            is het dna?
+            {% if seq.startswith("ATG") or seq.startswith("atg") %}
+                JA!
+            {%  else %}
+            NEE!
+            {% endif %}
+        </p>
+    </form>
+    </p>
+    <button type="submit">submit</button>
+    </form>
+
+<BR><BR>
+
+sequentie : {{ seq }}
+<BR><BR>
+het rna sequentie die erbij hoort: {{ messenger_rna }}
+<BR><BR>
+eiwit sequentie : {{ ei }}
+<BR><BR>
+achter hit staat naaam!
+BLASTGEGEVENS:
+<BR><BR>
+{{ b }}
+
+
+</body>
+</html>
