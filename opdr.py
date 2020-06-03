@@ -7,7 +7,7 @@ from vier import *
 
 app = Flask(__name__)
 
-# werd iedere keer in langzame rij gezet, dus wanneer je hem runt krijg je resultaten van hieronder.
+# werd iedere keer in langzame rij gezet, dus wanneer je hem runt krijg je resultaten van hieronder. zodat ik in iedergeval wist dat die werkte
 # natuurlijk kan je ook gewoon zoeken in de webpagina zelf en krijg je ook je resultaten :)
 
 @app.route('/')
